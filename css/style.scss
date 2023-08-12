@@ -1,0 +1,891 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+*{
+
+    margin: 0;
+    padding: 0;
+}
+@mixin prince(){
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+ 
+}
+.navigation{
+    text-align: center;
+    background-color: rgb(55, 55, 128);
+    width: 8%;
+}
+.upper{
+    @include prince();  
+}
+
+#menu{
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 100;
+    padding: 30px;
+    margin-left: 5px;
+}
+.bar{
+    width:100%;
+    height: 5px;
+    background-color:#fff;
+    display: block;
+    transition: 0.3s ease;
+    border-radius: 5px;
+}
+ #bar1{
+    transform: translateY(-4px);
+}
+#bar3{
+    transform: translateY(4px);
+}
+.nav li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: 1px solid white;
+}
+
+.nav li{
+    list-style-type: none;
+    padding:15px 0;
+
+}
+.nav ul{
+    margin-top: 50PX;
+}
+.nav{
+   padding: 0;
+   display: none;
+   transition: 1s ease;
+}
+.icon .bar{
+ background-color: #fff;
+}
+.icon #bar1{
+    transform: translatey(4px) rotate(-45deg);
+}
+.icon #bar3{
+    transform: translatey(-6px) rotate(45deg);
+}
+.icon #bar2{
+opacity: 0;
+}
+.change{
+    background-color: rgb(55, 55, 128);
+    height: 100vh;
+    position: absolute;
+    font-size: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    top: 0;
+    opacity: 0.9;
+}
+.change ul{
+  position: absolute;
+}
+.change li a:hover{
+    color: brown;
+    transition: 1s ease;
+}
+
+
+
+.navigation button {
+    color: #fff;
+    padding: 2px;
+    background: transparent;
+    border: 0;
+    margin-top: 10px;
+    font-size: 20px;
+
+}
+.navigation  .names h6{
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+.names h6{
+    color: brown;
+}
+
+/*-- business starts here--*/
+.business{
+    width: 24%;
+    background-color: rgb(246, 172, 35);
+    color: #fff;
+    text-align: center;
+
+}
+
+.business h3{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 25px;
+}
+.business h1{
+    margin-top: 40px;
+    font-size: 45px;
+}
+.business .button{
+    flex-direction: row;
+    width: 49%;
+    padding:10px 20px;
+    border: 0;
+    font-size:15px;
+    margin-top: 85px;
+}
+.button1{
+    color: #fff;
+    background: rgb(27, 27, 148);
+
+}
+.button2{
+    color: #fff;
+    background-color: rgb(246, 172, 35);
+
+}
+.button1:hover{
+    background-color: rgb(246, 172, 35);
+    transition: 1000ms ease;
+
+}
+.button2:hover{
+    background: rgb(27, 27, 148);
+    transition: 1000ms ease;
+}
+
+.banner{
+    width: 67%;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+.banner:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+
+
+/*-- business ends here--*/
+
+
+
+/*-- about starts here--*/
+
+.about{
+    @include prince();
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:100px 0;
+    justify-content: space-between;
+
+}
+.about-section{
+    width: 47%;
+    margin: auto 0;
+}
+.about-section1{
+    box-shadow: 2px 3px 10px 3px black;
+    padding: 1rem ;
+}
+.about-section2{
+    box-shadow: 2px 3px 10px 3px #fff;
+    padding: 1rem ;
+}
+.about-section:hover{
+  transform: scale(1.2);
+  transition-duration: 2s;
+}
+.about-section p{
+    padding: 20px 0;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+    
+}
+
+.buttonh{
+    width: 150px;
+    border: 0;
+    padding: 10px 20px;
+}
+.about-img{
+    width: 49%;
+}
+.about-img:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+.about-img img{
+    width: 95%;
+}
+.help{
+    width: 100%;
+    background: rgb(27, 27, 148);
+    margin: 0 auto;
+}
+.help .about{
+    color: #fff;
+}
+.help button{
+    background: rgb(13, 13, 58);
+
+}
+.help .buttonh{
+    color: #fff;
+    font-size: 18px;
+}
+.help .buttonh:hover{
+    background-color: orange;
+    transition: 1s ease;
+}
+
+/*-- about ends here--*/
+
+
+
+/*-- figure starts here--*/
+.figure{
+    width: 100%;
+    background: rgb(27, 27, 148);
+    padding:2rem 0;
+}
+.four{
+    @include prince();  
+   width: 80%;
+   margin: 0 auto;
+   justify-content: space-between;
+}
+.number{
+ position: relative;
+ 
+}
+.number:hover{
+    transform: scale(1.1);
+    transition-duration: 2s;
+}
+.number p{
+    position: absolute;
+    top: 1.5rem;
+    left: 1.7rem;
+    color: orange;
+    font-size: 1.3rem;
+}
+.slider img:hover{
+    transform: scale(1.1);
+    transition-duration: 2s;
+}
+.business:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+
+/*-- figure ends here--*/
+
+
+/* what we do starts here */
+ 
+.max-width{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+.what-we-do h2{
+  font-size: 2.5rem;
+  margin: 0;
+}
+.what-we-do{
+    font-size: 1.1rem;
+}
+.four-full-section{
+    @include prince();
+    justify-content: space-between;
+}
+
+.four-section {
+    position: relative;
+    margin: 4rem 0;
+}
+
+.bg-img img{
+    width: 80%;
+}
+
+.second-img{
+    position: relative;
+    position: absolute;
+    top: 2rem;
+    left: 1.2rem;
+}
+.second-img img{
+    width: 90%;
+}
+
+.four-section .third-image{
+    position: absolute;
+    top:4rem;
+    left: 3.5rem;
+    
+}
+.all-button{
+    padding: 0.7rem 2rem;
+    background-color: rgb(55, 55, 128);
+    margin-top: 1rem;
+    border: 0;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.all-button:hover{
+    background-color: orange;
+    transition-duration: 500ms;
+}
+
+
+.full-section h3{
+     font-size: 1.5rem;
+     margin: 1rem 0;
+     color: orange;
+
+}
+.full-section h3:hover{
+    color: rgb(55, 55, 128);
+    transition-duration: 500ms;
+}
+
+.full-section p{
+    font-size: 1.1rem;
+}
+
+/* what we do ends here */
+
+
+/*latest section starts here*/
+.max-width-new{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+}
+.flex-box{
+    @include prince();
+    justify-content: space-between;
+    
+}
+.flex-box span{
+    color: orange;
+}
+.latest-section h1{
+    font-size: 2.2rem;
+}
+.latest-section p{
+    font-size: 1.1rem;
+}
+
+.publish{
+    width: 45%;
+    margin: 3rem 0;
+    box-shadow:1px 1px 5px 1px gray;
+    padding: 1rem 2rem;
+
+}
+.publish p{
+    margin-top: 2rem;
+    padding: 1rem;
+}
+.publish-img{
+    width: 48%;
+    margin: 3rem 0;
+    height: 60vh;
+    position: relative;
+    left: -3.2rem;
+    top: 0.5rem;
+}
+.publish-img img{
+    width: 100%;
+}
+
+
+/*latest section starts here*/
+
+/*clients starts here*/
+
+.clients{
+    background-image: url(../images/client-bg.jpg);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.client-img h4{
+     font-size: 1.1rem;
+}
+.client-img p{
+font-size: 1.1rem;
+}
+.clients h1{
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 7rem;
+    font-size: 2.5rem;
+}
+.car{
+    margin: 0 auto;
+}
+.item .client-img{
+    width: 90%;
+    background-color: #fff;
+    padding: 1rem;
+    position: relative;
+}
+
+.item .client-img .img{
+    width: 30%;
+    background-color: #fff;
+}
+
+
+.clients .owl-prev, .clients .owl-next{
+    
+}
+
+
+
+/*clients ends here*/
+
+/*contact strts here*/
+.contact {
+    max-width: 1200px;
+    margin: 4rem auto;
+    @include prince();
+   justify-content: space-between;
+   
+}
+.contact h1{
+    font-size: 2.4rem;
+}
+.first{
+    width: 50%;
+}
+.map{
+    width: 50%;
+}
+.first input{
+    width: 90%;
+    border: none;
+    background-color: rgb(207, 206, 206);
+    font-size: 1rem;
+    padding: 1rem;
+}
+.first textarea {
+    width: 95%;
+}
+
+/*contact ends here*/
+
+
+/*footer starts here*/
+
+.footer{
+    background-color: rgb(27, 27, 94);
+    width: 100%;
+    
+}
+.last-section{
+    @include prince();
+    justify-content: space-between;
+}
+
+.first-section{
+    color: #fff;
+    width: 25%;
+}
+.first-section h2{
+    font-size: 2rem;
+}
+.first-section ul{
+    list-style-type: none;
+    padding: 0;
+}
+.first-section ul li{
+    padding: .5rem 0;
+    font-size: 1.2rem;
+}
+.first-section ul li span{
+    margin-right: 1rem;
+}
+.first-section  .all span{
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+.first-section li:hover,.all:hover{
+    color: orange;
+}
+.first-section li a{
+    text-decoration: none;
+    color: #fff;
+}
+.first-section ul li a:hover{
+    color: orange;
+}
+
+.first-section p{
+    font-size: 1.2rem;
+}
+.footer-button{
+    width: 100%;
+    margin-top: 1.2rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+    background-color: orange;
+    border: none;
+    color: #fff;
+}
+.footer-button:hover{
+    background-color: rgb(4, 4, 45);
+}
+.first-section input{
+    width: 90%;
+    padding: 1rem;
+
+}
+
+.copy{
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+.copy hr{
+    width: 60%;
+    margin: 0 auto;
+
+}
+ 
+.copy p{
+    margin: 2rem;
+}
+
+/*footer ends here*/
+
+
+@media only screen and  (max-width:921px) and (min-width:630px){
+    
+    
+    .business{
+        width:90%;
+    }
+    .banner {
+        width: 100%;
+    }
+
+    .about-section{
+        width: 45%;
+    }
+    .four-section {
+        width: 50%;
+    }
+    .bg-img{
+        width: 70%;
+    }
+    .bg-img img{
+        width: 70%;
+    }
+    
+    .second-img{
+        width: 35%;
+    }
+    .third-image img{
+        width: 95%;
+    }
+    
+    .publish {
+        width: 35%;
+    }
+    .publish p{
+         font-size: 14px;
+    }
+    .publish h2{
+        font-size: 16px;
+    }
+    .publish-img{
+        width: 50%;
+        position: relative;
+        left: -5rem;
+    }
+    .publish-img img{
+        width: 100%;
+    }
+   .first-section {
+    width: 50%;
+    margin-top: 3rem;
+    text-align: center;
+   }
+    
+   .copy{
+    margin-top: 2rem;
+   }
+   .first-section input {
+    width: 50%;
+   }
+   .first-section button {
+    width: 60%;
+   }
+    
+    
+}
+
+
+@media only screen and  (max-width:620px) and (min-width:0px){
+
+    .business{
+        width:90%;
+    }
+    .banner {
+        width: 100%;
+    }
+    
+    .about-section {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .about-img img{
+        width: 100%;
+    }
+    .about-img{
+        width: 90%;
+        margin: 3rem auto;
+
+    }
+  
+    .what-we-do{
+        text-align: center;
+    }
+    
+    .four-section{
+        width: 55%;
+        margin: 3rem auto;
+        
+    }
+    .bg-img{
+        width: 80%;
+    }
+    .second-img{
+        width: 45%;
+        position: absolute;
+        left: 2rem;
+    }
+    .third-image {
+        width: 30%;
+    }
+
+    .latest-section{
+        text-align: center;
+    }
+    .publish{
+        width: 80%;
+        margin: 1rem auto;
+    }
+    .publish-img {
+     width: 90%; 
+     margin: 1rem auto;
+     position: relative;
+     left: 0  ;
+    }
+    .publish-img img{
+        width: 100%;
+    }
+    .contact{
+        text-align: center;
+    }
+    .first,.map{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .last-section{
+        text-align: center;
+    }
+    .first-section {
+        width: 90%;
+        margin: 2rem auto;
+    }
+    .first-section input {
+     width: 50%;
+    }
+    .first-section button {
+        width: 57%;
+       }
+}
+
+@media only screen and  (max-width:921px) and (min-width:630px){
+    
+    
+    .business{
+        width:90%;
+    }
+    .banner {
+        width: 100%;
+    }
+
+    .about-section{
+        width: 45%;
+    }
+    .four-section {
+        width: 50%;
+    }
+    .bg-img{
+        width: 70%;
+    }
+    .bg-img img{
+        width: 70%;
+    }
+    
+    .second-img{
+        width: 35%;
+    }
+    .third-image img{
+        width: 95%;
+    }
+    
+    .publish {
+        width: 35%;
+    }
+    .publish p{
+         font-size: 14px;
+    }
+    .publish h2{
+        font-size: 16px;
+    }
+    .publish-img{
+        width: 50%;
+        position: relative;
+        left: -5rem;
+    }
+    .publish-img img{
+        width: 100%;
+    }
+   .first-section {
+    width: 50%;
+    margin-top: 3rem;
+    text-align: center;
+   }
+    
+   .copy{
+    margin-top: 2rem;
+   }
+   .first-section input {
+    width: 50%;
+   }
+   .first-section button {
+    width: 60%;
+   }
+    
+    
+}
+
+
+@media only screen and  (max-width:620px) and (min-width:0px){
+
+    .business{
+        width:90%;
+    }
+    .banner {
+        width: 100%;
+    }
+    
+    .about-section {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .about-img img{
+        width: 100%;
+    }
+    .about-img{
+        width: 90%;
+        margin: 3rem auto;
+
+    }
+  
+    .what-we-do{
+        text-align: center;
+    }
+    
+    .four-section{
+        width: 55%;
+        margin: 3rem auto;
+        
+    }
+    .bg-img{
+        width: 80%;
+    }
+    .second-img{
+        width: 45%;
+        position: absolute;
+        left: 2rem;
+    }
+    .third-image {
+        width: 30%;
+    }
+
+    .latest-section{
+        text-align: center;
+    }
+    .publish{
+        width: 80%;
+        margin: 1rem auto;
+    }
+    .publish-img {
+     width: 90%; 
+     margin: 1rem auto;
+     position: relative;
+     left: 0  ;
+    }
+    .publish-img img{
+        width: 100%;
+    }
+    .contact{
+        text-align: center;
+    }
+    .first,.map{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .last-section{
+        text-align: center;
+    }
+    .first-section {
+        width: 90%;
+        margin: 2rem auto;
+    }
+    .first-section input {
+     width: 50%;
+    }
+    .first-section button {
+        width: 57%;
+       }
+}
+
+
+
+
+
+
+
