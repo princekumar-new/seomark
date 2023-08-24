@@ -178,7 +178,7 @@ body {
 
 .button2:hover {
   background: rgb(27, 27, 148);
-  transition: 1000ms ease;
+  transition: 1s linear;
 }
 
 .banner {
@@ -188,11 +188,6 @@ body {
 .banner img {
   width: 100%;
   height: 100%;
-}
-
-.banner:hover {
-  transform: scale(1.1);
-  transition-duration: 1s;
 }
 
 /*-- business ends here--*/
@@ -212,18 +207,12 @@ body {
 }
 
 .about-section1 {
-  box-shadow: 2px 3px 10px 3px black;
   padding: 1rem;
 }
 
 .about-section2 {
   box-shadow: 2px 3px 10px 3px #fff;
   padding: 1rem;
-}
-
-.about-section:hover {
-  transform: scale(1.2);
-  transition-duration: 2s;
 }
 
 .about-section p {
@@ -241,11 +230,6 @@ body {
 
 .about-img {
   width: 49%;
-}
-
-.about-img:hover {
-  transform: scale(1.1);
-  transition-duration: 1s;
 }
 
 .about-img img {
@@ -312,11 +296,6 @@ body {
 .slider img:hover {
   transform: scale(1.1);
   transition-duration: 2s;
-}
-
-.business:hover {
-  transform: scale(1.1);
-  transition-duration: 1s;
 }
 
 /*-- figure ends here--*/
@@ -826,6 +805,9 @@ body {
   .what-we-do {
     text-align: center;
   }
+  .what-we-do h2 {
+    font-size: 2.4rem;
+  }
   .four-section {
     width: 55%;
     margin: 3rem auto;
@@ -841,8 +823,15 @@ body {
   .third-image {
     width: 30%;
   }
+  .clients h1 {
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+  }
   .latest-section {
     text-align: center;
+  }
+  .latest-section p {
+    margin-bottom: 2rem;
   }
   .publish {
     width: 80%;
@@ -859,6 +848,10 @@ body {
   }
   .contact {
     text-align: center;
+  }
+  .contact h1 {
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
   }
   .first, .map {
     width: 90%;
