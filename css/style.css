@@ -597,7 +597,7 @@ body {
 }
 
 /*footer ends here*/
-@media only screen and (max-width: 921px) and (min-width: 630px) {
+@media only screen and (max-width: 921px) and (min-width: 621px) {
   .business {
     width: 90%;
   }
@@ -655,6 +655,7 @@ body {
   }
 }
 @media only screen and (max-width: 620px) and (min-width: 0px) {
+  
   .business {
     width: 90%;
   }
@@ -785,6 +786,10 @@ body {
   }
 }
 @media only screen and (max-width: 620px) and (min-width: 0px) {
+  .header ul {
+    position: relative;
+    left: 0;
+  }
   .business {
     width: 90%;
   }
